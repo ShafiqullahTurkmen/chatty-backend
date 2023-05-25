@@ -1,1 +1,4 @@
-"# chatty-backend" 
+# chatty-backend
+
+## Real time messaging backend
+
