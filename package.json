@@ -7,8 +7,9 @@
     "dev": "nodemon -r tsconfig-paths/register src/app.ts | npx bunyan",
     "lint:check": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
-    "prettier:check" : "prettier --check src/**/*.{ts,json}",
-    "prettier:fix" : "prettier --write src/**/*.{ts,json}"
+    "prettier:check": "prettier --check src/**/*.{ts,json}",
+    "prettier:fix": "prettier --write src/**/*.{ts,json}",
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -63,6 +64,8 @@
     "eslint-config-prettier": "^8.8.0",
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "@types/redis-info": "^3.0.0",
+    "tsc-alias": "^1.8.2"
   }
 }
